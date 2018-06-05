@@ -73,12 +73,12 @@ int main()
 	cout << "Stan poczatkowy: " << endl;
 	pp41->wyswietl();
 	if (s1.kupno(pp41,50)==true)
-    {
-        cout << "Stan po operacji kupna: " << endl;
-        pp41->wyswietl();
-    }
-    else
-        cout << "Niepowodzenie operacji kupna." << endl;
+        {
+            cout << "Stan po operacji kupna: " << endl;
+            pp41->wyswietl();
+        }
+        else
+            cout << "Niepowodzenie operacji kupna." << endl;
 
 
 
