@@ -13,16 +13,14 @@ class Sklep
 {
 private:
     string nazwa_sklepu;
-    vector<Produkt *> produkty;         //wektor przechowujacy produkty dostepne w sklepie (wektor wskaznikow na obiekt bazowy)
+    vector<Produkt *> produkty;             //wektor przechowujacy produkty dostepne w sklepie (wektor wskaznikow na obiekt bazowy)
 
 public:
-    //Sklep(const string & n, Produkt * p1, Produkt * p2, Produkt * p3 );
     Sklep(const string & n, vector<Produkt *> prod);
     ~Sklep() {}
     void przeglad_stanu_sklepu() const;
-    //void kupno();                     //niezaimplementowane
-    //void sprzedaz();                  //niezaimplementowane
-
+    bool kupno(Produkt * p, double n);      //operacja zakupu przez sklepproduktow
+    bool sprzedaz(Produkt * p, double n);   //operacja sprzedazy przez sklep produktow (pojedynczo lub hurtowo)
 };
 
 #endif // SKLEP_H
