@@ -77,12 +77,12 @@ bool Sklep::sprzedaz(Produkt * p, double n)
     {
 		if (produkty[i]->odejmij(n))					//zmniejszenie liczby dostepnych produktow
 			return true;
-		else
+        else
 			return false;
-	}
-	else
-	{
-		cout << "Produkt niedostepny w sklepie\n";  //produkt niedostepny -> nie mozna go kupic
-		return false;
-	}
+    }
+    else
+    {
+        cout << "Produkt niedostepny w sklepie\n";  //produkt niedostepny -> nie mozna go kupic
+        return false;
+    }
 }

@@ -15,7 +15,7 @@ int main()
 
 	//Produkt p1;   //pusty produkt
 	Produkt p2("Woda mineralna", "Zywiec Zdroj", 2.59, false,500);	//konstruktor 1 typu
-	Napoj p3(p2,1.75);												//konstruktor 2 typu
+	Napoj p3(p2,1.75);                                              //konstruktor 2 typu
 	Napoj p4("Sok jablkowy", "Hortex", 4.99, false, 200, 0.8);
 	Napoj p5("Herbata mrozona", "Nestea", 3.20, true, 100, 0.5);
 
@@ -72,9 +72,13 @@ int main()
 	cout << "Operacja kupna: zakup 50 produktow" << endl << endl;
 	cout << "Stan poczatkowy: " << endl;
 	pp41->wyswietl();
-	s1.kupno(pp41,50);
-	cout << "Stan po operacji kupna: " << endl;
-	pp41->wyswietl();
+	if (s1.kupno(pp41,50)==true)
+    {
+        cout << "Stan po operacji kupna: " << endl;
+        pp41->wyswietl();
+    }
+    else
+		cout << "Niepowodzenie operacji kupna." << endl;
 
 
 
@@ -105,7 +109,7 @@ int main()
 	}
 	else
 	{
-		cout << "Niepowodzenie operacji sprzedazy.  \nJest niewystarczajaca liczba dostepnych produktow.\n" << endl;
+		cout << "Niepowodzenie operacji sprzedazy. \nJest niewystarczajaca liczba dostepnych produktow.\n" << endl;
 	}
 
 
