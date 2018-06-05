@@ -72,13 +72,13 @@ int main()
 	cout << "Operacja kupna: zakup 50 produktow" << endl << endl;
 	cout << "Stan poczatkowy: " << endl;
 	pp41->wyswietl();
-	if (s1.kupno(pp41,50)==true)
+    if (s1.kupno(pp41,50)==true)
     {
         cout << "Stan po operacji kupna: " << endl;
         pp41->wyswietl();
     }
     else
-		cout << "Niepowodzenie operacji kupna." << endl;
+        cout << "Niepowodzenie operacji kupna." << endl;
 
 
 
